@@ -17,10 +17,10 @@ public class TechnicalWriter extends Employee {
 
     public void setVacationTime() {
         if(getYearsAtCompany() >= 2){
-            vacationTime = 2;
+            vacationTime = 14;
         }
         else if(getYearsAtCompany() == 1){
-            vacationTime = 1;
+            vacationTime = 7;
         }
         else{
             vacationTime = 0;
@@ -32,8 +32,7 @@ public class TechnicalWriter extends Employee {
      */
     @Override
     public String toString(){
-        return "Name: " + getName() + "\n" + "Salary: " +
-                getBaseSalary() + "\n" + "Motto: " + motto() + "\n" + "Vacation Days: " + getVacationTime();
+        return super.toString() + "\nVacation Days: " + getVacationTime();
     }
     @Override
     public String motto(){

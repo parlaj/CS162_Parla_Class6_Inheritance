@@ -33,10 +33,10 @@ public class Engineer extends Employee{
 
     public void setVacationTime() {
         if(getYearsAtCompany() >= 2){
-            vacationTime = 3;
+            vacationTime = 21;
         }
         else if(getYearsAtCompany() == 1){
-            vacationTime = 2;
+            vacationTime = 14;
         }
 
     }
@@ -55,15 +55,13 @@ public class Engineer extends Employee{
     }
     @Override
     public String toString(){
-        return "Name: " + getName() + "\n" + "Salary: " +
-                getBaseSalary() + "\n" + "Motto: " + motto() +
-                "\n" + "Vacation Weeks: " + getVacationTime() + "\n" +
-                "Sign-On Bonus: " + signOnBonus;
+        return super.toString() + "\nVacation Days: " + getVacationTime() +
+                "\nSign-On Bonus: " + signOnBonus;
     }
 
     @Override
     public String motto(){
-        return "To the optimist, the glass is half full.To the pessimist, the glass " +
-                "is half empty.To the engineer, the glass is twice as big as it needs to be.";
+        return "To the optimist, the glass is half full. To the pessimist, the glass " +
+                "is half empty. To the engineer, the glass is twice as big as it needs to be.";
     }
 }

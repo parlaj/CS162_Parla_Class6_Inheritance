@@ -72,7 +72,7 @@ public class Employee {
      * @return A value of data type String
      */
     public String toString(){
-        return "Name: " + name + "\n" + "Salary: " + baseSalary + "\n" + "Motto: " + motto();
+        return "Name: " + name + "\nSalary: $" + baseSalary + "\nMotto: " + motto();
      }
     /**
      * Returns a generic employee motto
