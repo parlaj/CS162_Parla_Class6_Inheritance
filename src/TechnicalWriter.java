@@ -1,10 +1,23 @@
+/**
+ * TechnicalWriter.java - Employee Benefits Management
+ * @author Jacob Parla
+ * @version 1
+ */
 public class TechnicalWriter extends Employee {
     private int vacationTime;
 
+    /**
+     * Parameterless constructor
+     */
     public TechnicalWriter() {
 
     }
 
+    /**
+     * Parametered constructor
+     * @param name a String data type
+     * @param yearsOfExperience an int data type
+     */
     public TechnicalWriter(String name, int yearsOfExperience) {
         super(name, yearsOfExperience);
 

@@ -1,12 +1,25 @@
+/**
+ * ProductManager.java - Employee Benefits Management
+ * @author Jacob Parla
+ * @version 1
+ */
 public class ProductManager extends Employee {
     private int vacationTime;
     private int stockOptions;
 
+    /**
+     * Parameterless constructor
+     */
     public ProductManager() {
         setBaseSalary(getBaseSalary()*2);
 
     }
 
+    /**
+     * Parametered Constructor
+     * @param name a String data type
+     * @param yearsOfExperience an int data type
+     */
     public ProductManager(String name, int yearsOfExperience) {
         super(name, yearsOfExperience);
         setBaseSalary((getBaseSalary()*2));

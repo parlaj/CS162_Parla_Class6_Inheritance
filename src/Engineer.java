@@ -1,7 +1,15 @@
+/**
+ * Engineer.java - Employee Benefits Management
+ * @author Jacob Parla
+ * @version 1
+ */
 public class Engineer extends Employee{
     private int vacationTime;
     private int signOnBonus;
 
+    /**
+     * Parameterless constructor
+     */
     public Engineer() {
         setBaseSalary(getBaseSalary()*1.5);
         if(getYearsOfExperience() >= 5){
@@ -13,6 +21,11 @@ public class Engineer extends Employee{
 
     }
 
+    /**
+     * Parametered Constructor
+     * @param name a String data type
+     * @param yearsOfExperience an int data type
+     */
     public Engineer(String name, int yearsOfExperience) {
         super(name, yearsOfExperience);
         setBaseSalary(getBaseSalary()*1.5);
